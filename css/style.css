@@ -1,0 +1,115 @@
+:root{
+    --bg-color: white;
+    --text-color:black;
+    --title-color:black;
+    --genre-color:black;
+    --border-block: 1px solid black;
+}
+.light-mode{
+    --text-color:black;
+    --title-color:black;
+    --bg-color:white;
+    --genre-color:red;
+}
+.dark-mode{
+    --text-color:white;
+    --title-color:red;
+    --bg-color:black;
+    --genre-color:white;
+    --border-block: 1px solid gray;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    
+}
+header{
+    padding: 1% 2%;
+  
+}
+.container{
+    padding: 1% 2%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+body{
+    background-color: var(--bg-color);
+}
+.title{
+    color: var(--title-color);
+}
+.details{
+    color: var(--text-color);
+}
+.ganre{
+   color: var(--genre-color);
+   overflow-x: hidden;
+}
+
+.block{
+    border: var(--border-block);
+  
+    border-radius: 15px;
+}
+.block:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+button{
+    background-color: transparent;
+    border-radius: 10px;
+}
+button:nth-child(1){
+    border: 1px solid black;
+    color: gray;
+}
+button:nth-child(2){
+    border: 1px solid gray;
+    color: gray;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+#vew{
+    position: relative;
+    bottom: 0%;
+    background-color: rgb(19, 19, 234);
+    transform: scale(1);
+}
+.parda3{
+    background: hsla(0, 0%, 0%, 0.575);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -100%);
+
+}
+.modal{
+    width: 700px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.transform{
+     transform: translate(0, 0%);
+     transition: all 2s ease-in-out;
+}
+.transform2{
+    transform: translate(0, -100%);
+    transition: all 2s ease-in-out;
+}
+.overflow{
+    overflow-y: hidden;
+}
